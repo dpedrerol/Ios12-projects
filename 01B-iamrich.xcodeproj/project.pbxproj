@@ -56,15 +56,31 @@
 		754FCA1E24EBE44400590E11 /* 01B-iamrich */ = {
 			isa = PBXGroup;
 			children = (
+				754FCA3424EBEAAD00590E11 /* Controller */,
+				754FCA3324EBEA2300590E11 /* Storyboard */,
 				754FCA1F24EBE44400590E11 /* AppDelegate.swift */,
 				754FCA2124EBE44400590E11 /* SceneDelegate.swift */,
-				754FCA2324EBE44400590E11 /* ViewController.swift */,
-				754FCA2524EBE44400590E11 /* Main.storyboard */,
 				754FCA2824EBE44600590E11 /* Assets.xcassets */,
-				754FCA2A24EBE44600590E11 /* LaunchScreen.storyboard */,
 				754FCA2D24EBE44600590E11 /* Info.plist */,
 			);
 			path = "01B-iamrich";
+			sourceTree = "<group>";
+		};
+		754FCA3324EBEA2300590E11 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				754FCA2A24EBE44600590E11 /* LaunchScreen.storyboard */,
+				754FCA2524EBE44400590E11 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		754FCA3424EBEAAD00590E11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				754FCA2324EBE44400590E11 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
