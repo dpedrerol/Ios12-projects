@@ -27,6 +27,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-op-osh">
                                 <rect key="frame" x="157.5" y="668" width="99.5" height="93"/>
                                 <state key="normal" backgroundImage="Button-button"/>
+                                <connections>
+                                    <action selector="buttonOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ef-QV-pIs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.7444731271524655" blue="0.3645179841717916" alpha="0.76212007705479456" colorSpace="custom" customColorSpace="displayP3"/>
@@ -40,6 +43,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonOn" destination="eWM-op-osh" id="SBf-Y2-JZh"/>
+                        <outlet property="imageView" destination="Stc-Bg-7uS" id="2af-Zz-ECc"/>
+                        <outlet property="labelTitle" destination="ojl-UN-9rR" id="UIu-Wq-plo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
