@@ -25,7 +25,7 @@
                                 <rect key="frame" x="113.5" y="276.5" width="187" height="343"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-op-osh">
-                                <rect key="frame" x="157.5" y="667" width="99.5" height="93"/>
+                                <rect key="frame" x="157.5" y="668" width="99.5" height="93"/>
                                 <state key="normal" backgroundImage="Button-button"/>
                             </button>
                         </subviews>
@@ -36,7 +36,7 @@
                             <constraint firstItem="Stc-Bg-7uS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bSl-kv-Ncp"/>
                             <constraint firstItem="eWM-op-osh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="di5-gC-kEx"/>
                             <constraint firstItem="Stc-Bg-7uS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dkP-P2-QAu"/>
-                            <constraint firstItem="Stc-Bg-7uS" firstAttribute="bottom" secondItem="eWM-op-osh" secondAttribute="bottom" constant="-140.5" id="yuE-24-fz8"/>
+                            <constraint firstItem="Stc-Bg-7uS" firstAttribute="bottom" secondItem="eWM-op-osh" secondAttribute="bottom" constant="-141.5" id="yuE-24-fz8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
