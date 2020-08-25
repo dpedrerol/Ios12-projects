@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,88 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_dices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicebackground" translatesAutoresizingMaskIntoConstraints="NO" id="EUF-Z6-pqL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicelogo" translatesAutoresizingMaskIntoConstraints="NO" id="yiM-ts-RiR">
+                                <rect key="frame" x="14.5" y="109" width="385" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="385" id="3PD-k2-4yR"/>
+                                    <constraint firstAttribute="height" constant="143" id="TQR-CK-wQQ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ld5-Kz-DXv">
+                                <rect key="frame" x="83" y="394.5" width="248" height="107.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="sE2-Y2-yEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="107.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sE2-Y2-yEU" secondAttribute="height" multiplier="63:62" id="XZA-ga-fhU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-YE-HNC">
+                                        <rect key="frame" x="139" y="0.0" width="109" height="107.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dfv-YE-HNC" secondAttribute="height" multiplier="63:62" id="xmn-Ro-s09"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7b-we-hZ8">
+                                <rect key="frame" x="132" y="743.5" width="150.5" height="48.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Tira los dados" backgroundImage="buttondice">
+                                    <color key="titleColor" red="0.89316105840000004" green="0.86420160530000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U0W-jH-mAD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5e8-9X-2sV">
+                                <rect key="frame" x="173" y="800" width="68" height="29"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="26"/>
+                                <color key="textColor" red="0.89316105840000004" green="0.86420160530000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5e8-9X-2sV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8BX-yL-fKt"/>
+                            <constraint firstItem="yiM-ts-RiR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="BhN-V8-GwS"/>
+                            <constraint firstAttribute="bottom" secondItem="EUF-Z6-pqL" secondAttribute="bottom" id="D84-h6-OoV"/>
+                            <constraint firstItem="EUF-Z6-pqL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LT4-s8-lb6"/>
+                            <constraint firstItem="ld5-Kz-DXv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MAV-bP-zBS"/>
+                            <constraint firstItem="Y7b-we-hZ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MI1-r9-7FH"/>
+                            <constraint firstItem="EUF-Z6-pqL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RWT-tt-SIp"/>
+                            <constraint firstItem="EUF-Z6-pqL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X5P-4F-Nlw"/>
+                            <constraint firstItem="ld5-Kz-DXv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aAL-j0-wnj"/>
+                            <constraint firstItem="EUF-Z6-pqL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="afG-VN-sF6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y7b-we-hZ8" secondAttribute="bottom" constant="70" id="kcu-AM-D4Q"/>
+                            <constraint firstItem="5e8-9X-2sV" firstAttribute="top" secondItem="Y7b-we-hZ8" secondAttribute="bottom" constant="8" id="nfF-eF-RYY"/>
+                            <constraint firstItem="yiM-ts-RiR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="un2-DA-aTg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageViewDiceLeft" destination="sE2-Y2-yEU" id="Bhi-xZ-48s"/>
+                        <outlet property="imageViewDiceRight" destination="dfv-YE-HNC" id="fhe-E5-JgD"/>
+                        <outlet property="sumDiceLabel" destination="5e8-9X-2sV" id="eAf-Ot-TR3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="buttondice" width="150.5" height="48.5"/>
+        <image name="dice1" width="107" height="107.5"/>
+        <image name="dicebackground" width="361.5" height="643"/>
+        <image name="dicelogo" width="428.5" height="182"/>
+    </resources>
 </document>
