@@ -25,14 +25,14 @@
                                 <color key="textColor" red="0.90856995558375631" green="0.90856995558375631" blue="0.90856995558375631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg8-jk-TKD">
-                                <rect key="frame" x="130" y="419.5" width="154" height="57.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu respuesta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg8-jk-TKD">
+                                <rect key="frame" x="77.5" y="419.5" width="259.5" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVN-Ab-Ha1">
-                                <rect key="frame" x="135.5" y="695" width="143" height="132"/>
+                                <rect key="frame" x="135.5" y="680" width="143" height="132"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="4KL-dW-rSe"/>
                                     <constraint firstAttribute="height" constant="132" id="CNN-pm-Fej"/>
@@ -41,6 +41,9 @@
                                 <state key="normal" title="?" backgroundImage="adivinobutton">
                                     <color key="titleColor" red="0.90856995559999998" green="0.90856995559999998" blue="0.90856995559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kb5-Ao-eRL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -48,12 +51,15 @@
                             <constraint firstItem="tg8-jk-TKD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3ff-bd-wIQ"/>
                             <constraint firstItem="tg8-jk-TKD" firstAttribute="top" secondItem="23A-mh-A6k" secondAttribute="bottom" constant="160" id="CYL-j8-unh"/>
                             <constraint firstItem="23A-mh-A6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J59-ge-zrO"/>
-                            <constraint firstItem="dVN-Ab-Ha1" firstAttribute="top" secondItem="tg8-jk-TKD" secondAttribute="bottom" constant="218" id="NzN-lP-7SO"/>
+                            <constraint firstItem="dVN-Ab-Ha1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="crO-uq-HRI"/>
                             <constraint firstItem="dVN-Ab-Ha1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iI4-So-lAC"/>
                             <constraint firstItem="tg8-jk-TKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFl-ZH-RB7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="labelAnswer" destination="tg8-jk-TKD" id="CJc-KQ-svX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
