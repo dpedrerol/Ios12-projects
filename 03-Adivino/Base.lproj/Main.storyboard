@@ -25,12 +25,6 @@
                                 <color key="textColor" red="0.90856995558375631" green="0.90856995558375631" blue="0.90856995558375631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu respuesta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg8-jk-TKD">
-                                <rect key="frame" x="77.5" y="419.5" width="259.5" height="57.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVN-Ab-Ha1">
                                 <rect key="frame" x="135.5" y="680" width="143" height="132"/>
                                 <constraints>
@@ -45,29 +39,37 @@
                                     <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kb5-Ao-eRL"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questions" translatesAutoresizingMaskIntoConstraints="NO" id="OhK-w9-adv">
+                                <rect key="frame" x="82" y="360" width="250" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="K2p-8q-akB"/>
+                                    <constraint firstAttribute="height" constant="176" id="OqL-uj-auN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="tg8-jk-TKD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3ff-bd-wIQ"/>
-                            <constraint firstItem="tg8-jk-TKD" firstAttribute="top" secondItem="23A-mh-A6k" secondAttribute="bottom" constant="160" id="CYL-j8-unh"/>
-                            <constraint firstItem="23A-mh-A6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J59-ge-zrO"/>
+                            <constraint firstItem="23A-mh-A6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CuH-US-7rc"/>
+                            <constraint firstItem="23A-mh-A6k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178.5" id="H9o-0h-6NS"/>
+                            <constraint firstItem="OhK-w9-adv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WyD-Sh-Rc6"/>
                             <constraint firstItem="dVN-Ab-Ha1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="crO-uq-HRI"/>
                             <constraint firstItem="dVN-Ab-Ha1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iI4-So-lAC"/>
-                            <constraint firstItem="tg8-jk-TKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFl-ZH-RB7"/>
+                            <constraint firstItem="OhK-w9-adv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="znx-XE-W2j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="labelAnswer" destination="tg8-jk-TKD" id="CJc-KQ-svX"/>
+                        <outlet property="imageAnswer" destination="OhK-w9-adv" id="F7J-pg-yXd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+            <point key="canvasLocation" x="-28" y="115"/>
         </scene>
     </scenes>
     <resources>
         <image name="adivinobutton" width="643" height="643"/>
         <image name="fantasybackground" width="1109" height="1929"/>
+        <image name="questions" width="643" height="453.5"/>
     </resources>
 </document>
