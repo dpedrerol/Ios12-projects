@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1B_iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby-image" translatesAutoresizingMaskIntoConstraints="NO" id="fPZ-Ya-Hhh">
+                                <rect key="frame" x="70.666666666666686" y="281" width="234" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="i0L-02-gYh"/>
+                                    <constraint firstAttribute="width" secondItem="fPZ-Ya-Hhh" secondAttribute="height" multiplier="117:125" id="sKW-KN-sI0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwh-BR-KPL">
+                                <rect key="frame" x="91.666666666666686" y="183" width="192" height="62"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="4" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZs-OY-UEW">
+                                <rect key="frame" x="120.00000000000001" y="567" width="135.33333333333337" height="135.33333333333337"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
+                                <state key="normal" title="Pulsa" backgroundImage="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="highlighted" title="Pulsa">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mi7-2r-Baf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67431031391559182" green="0.96897378857362937" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Mwh-BR-KPL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2fv-4O-hgL"/>
+                            <constraint firstItem="dZs-OY-UEW" firstAttribute="top" secondItem="fPZ-Ya-Hhh" secondAttribute="bottom" constant="36" id="87B-zh-Sbc"/>
+                            <constraint firstItem="fPZ-Ya-Hhh" firstAttribute="top" secondItem="Mwh-BR-KPL" secondAttribute="bottom" constant="36" id="XKr-0b-6u7"/>
+                            <constraint firstItem="fPZ-Ya-Hhh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XUF-26-hMI"/>
+                            <constraint firstItem="dZs-OY-UEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hOx-2L-vcQ"/>
+                            <constraint firstItem="fPZ-Ya-Hhh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pv6-Ol-fFD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="dZs-OY-UEW" id="k5W-Bf-c0H"/>
+                        <outlet property="imageIcon" destination="fPZ-Ya-Hhh" id="fmB-x3-1oY"/>
+                        <outlet property="labelTitle" destination="Mwh-BR-KPL" id="rQL-kv-pdc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="93.842364532019715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="135.33332824707031" height="135.33332824707031"/>
+        <image name="ruby-image" width="234" height="250"/>
+    </resources>
+</document>
