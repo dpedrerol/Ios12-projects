@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7542DB002509A132004AA39D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7542DAFF2509A132004AA39D /* SecondViewController.swift */; };
+		7542DB122509A661004AA39D /* 1-XC.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0A2509A660004AA39D /* 1-XC.wav */; };
+		7542DB132509A661004AA39D /* 6-XA.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0B2509A660004AA39D /* 6-XA.wav */; };
+		7542DB142509A661004AA39D /* 8-XC1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0C2509A660004AA39D /* 8-XC1.wav */; };
+		7542DB152509A661004AA39D /* 7-XB.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0D2509A660004AA39D /* 7-XB.wav */; };
+		7542DB162509A661004AA39D /* 5-XG.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0E2509A661004AA39D /* 5-XG.wav */; };
+		7542DB172509A661004AA39D /* 4-XF.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0F2509A661004AA39D /* 4-XF.wav */; };
+		7542DB182509A661004AA39D /* 2-XD.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB102509A661004AA39D /* 2-XD.wav */; };
+		7542DB192509A661004AA39D /* 3-XE.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB112509A661004AA39D /* 3-XE.wav */; };
 		7582DF26250791C50014C60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582DF25250791C50014C60B /* AppDelegate.swift */; };
 		7582DF28250791C50014C60B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582DF27250791C50014C60B /* SceneDelegate.swift */; };
 		7582DF2A250791C50014C60B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582DF29250791C50014C60B /* ViewController.swift */; };
@@ -30,6 +39,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7542DAFF2509A132004AA39D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7542DB0A2509A660004AA39D /* 1-XC.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "1-XC.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/1-XC.wav"; sourceTree = "<group>"; };
+		7542DB0B2509A660004AA39D /* 6-XA.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "6-XA.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/6-XA.wav"; sourceTree = "<group>"; };
+		7542DB0C2509A660004AA39D /* 8-XC1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "8-XC1.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/8-XC1.wav"; sourceTree = "<group>"; };
+		7542DB0D2509A660004AA39D /* 7-XB.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "7-XB.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/7-XB.wav"; sourceTree = "<group>"; };
+		7542DB0E2509A661004AA39D /* 5-XG.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "5-XG.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/5-XG.wav"; sourceTree = "<group>"; };
+		7542DB0F2509A661004AA39D /* 4-XF.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "4-XF.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/4-XF.wav"; sourceTree = "<group>"; };
+		7542DB102509A661004AA39D /* 2-XD.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "2-XD.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/2-XD.wav"; sourceTree = "<group>"; };
+		7542DB112509A661004AA39D /* 3-XE.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "3-XE.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/3-XE.wav"; sourceTree = "<group>"; };
 		7582DF22250791C50014C60B /* 05-Piano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-Piano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7582DF25250791C50014C60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7582DF27250791C50014C60B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,10 +102,10 @@
 		7582DF24250791C50014C60B /* 05-Piano */ = {
 			isa = PBXGroup;
 			children = (
+				75C7279025098B450049923F /* Controllers */,
 				7582DF3B2507D81F0014C60B /* Sounds */,
 				7582DF25250791C50014C60B /* AppDelegate.swift */,
 				7582DF27250791C50014C60B /* SceneDelegate.swift */,
-				7582DF29250791C50014C60B /* ViewController.swift */,
 				7582DF2B250791C50014C60B /* Main.storyboard */,
 				7582DF392507961C0014C60B /* Extensions.swift */,
 				7582DF2E250791CA0014C60B /* Assets.xcassets */,
@@ -100,6 +118,14 @@
 		7582DF3B2507D81F0014C60B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				7542DB0A2509A660004AA39D /* 1-XC.wav */,
+				7542DB102509A661004AA39D /* 2-XD.wav */,
+				7542DB112509A661004AA39D /* 3-XE.wav */,
+				7542DB0F2509A661004AA39D /* 4-XF.wav */,
+				7542DB0E2509A661004AA39D /* 5-XG.wav */,
+				7542DB0B2509A660004AA39D /* 6-XA.wav */,
+				7542DB0D2509A660004AA39D /* 7-XB.wav */,
+				7542DB0C2509A660004AA39D /* 8-XC1.wav */,
 				7582DF442507D92D0014C60B /* 1-A.mp3 */,
 				7582DF422507D92D0014C60B /* 2-Bb.mp3 */,
 				7582DF3F2507D92C0014C60B /* 3-B.mp3 */,
@@ -115,6 +141,15 @@
 				7582DF402507D92C0014C60B /* 13-A1.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		75C7279025098B450049923F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7582DF29250791C50014C60B /* ViewController.swift */,
+				7542DAFF2509A132004AA39D /* SecondViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,13 +211,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7582DF512507D92D0014C60B /* 1-A.mp3 in Resources */,
+				7542DB192509A661004AA39D /* 3-XE.wav in Resources */,
 				7582DF32250791CA0014C60B /* LaunchScreen.storyboard in Resources */,
 				7582DF4A2507D92D0014C60B /* 4-C.mp3 in Resources */,
 				7582DF4D2507D92D0014C60B /* 13-A1.mp3 in Resources */,
+				7542DB132509A661004AA39D /* 6-XA.wav in Resources */,
+				7542DB142509A661004AA39D /* 8-XC1.wav in Resources */,
+				7542DB152509A661004AA39D /* 7-XB.wav in Resources */,
+				7542DB162509A661004AA39D /* 5-XG.wav in Resources */,
 				7582DF4C2507D92D0014C60B /* 3-B.mp3 in Resources */,
 				7582DF4E2507D92D0014C60B /* 10-Gb.mp3 in Resources */,
 				7582DF2F250791CA0014C60B /* Assets.xcassets in Resources */,
 				7582DF492507D92D0014C60B /* 5-Db.mp3 in Resources */,
+				7542DB182509A661004AA39D /* 2-XD.wav in Resources */,
 				7582DF4F2507D92D0014C60B /* 2-Bb.mp3 in Resources */,
 				7582DF522507D92D0014C60B /* 8-E.mp3 in Resources */,
 				7582DF4B2507D92D0014C60B /* 12-Ab.mp3 in Resources */,
@@ -191,6 +232,8 @@
 				7582DF542507D92D0014C60B /* 7-Eb.mp3 in Resources */,
 				7582DF532507D92D0014C60B /* 11-G.mp3 in Resources */,
 				7582DF2D250791C50014C60B /* Main.storyboard in Resources */,
+				7542DB122509A661004AA39D /* 1-XC.wav in Resources */,
+				7542DB172509A661004AA39D /* 4-XF.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +247,7 @@
 				7582DF2A250791C50014C60B /* ViewController.swift in Sources */,
 				7582DF26250791C50014C60B /* AppDelegate.swift in Sources */,
 				7582DF28250791C50014C60B /* SceneDelegate.swift in Sources */,
+				7542DB002509A132004AA39D /* SecondViewController.swift in Sources */,
 				7582DF3A2507961C0014C60B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
