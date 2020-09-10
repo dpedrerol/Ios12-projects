@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75139E8B2509B19000015445 /* 1-GE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75139E852509B19000015445 /* 1-GE.mp3 */; };
+		75139E8C2509B19000015445 /* 4-GD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75139E862509B19000015445 /* 4-GD.mp3 */; };
+		75139E8D2509B19000015445 /* 2-GB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75139E872509B19000015445 /* 2-GB.mp3 */; };
+		75139E8E2509B19000015445 /* 5-GA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75139E882509B19000015445 /* 5-GA.mp3 */; };
+		75139E8F2509B19000015445 /* 3-GG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75139E892509B19000015445 /* 3-GG.mp3 */; };
+		75139E902509B19000015445 /* 6-GE1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75139E8A2509B19000015445 /* 6-GE1.mp3 */; };
+		75139E922509BEC100015445 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75139E912509BEC100015445 /* ThirdViewController.swift */; };
 		7542DB002509A132004AA39D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7542DAFF2509A132004AA39D /* SecondViewController.swift */; };
 		7542DB122509A661004AA39D /* 1-XC.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0A2509A660004AA39D /* 1-XC.wav */; };
 		7542DB132509A661004AA39D /* 6-XA.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7542DB0B2509A660004AA39D /* 6-XA.wav */; };
@@ -39,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75139E852509B19000015445 /* 1-GE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "1-GE.mp3"; path = "../../../../../../../../../../Desktop/Develop/Piano/Guitar/1-GE.mp3"; sourceTree = "<group>"; };
+		75139E862509B19000015445 /* 4-GD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "4-GD.mp3"; path = "../../../../../../../../../../Desktop/Develop/Piano/Guitar/4-GD.mp3"; sourceTree = "<group>"; };
+		75139E872509B19000015445 /* 2-GB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "2-GB.mp3"; path = "../../../../../../../../../../Desktop/Develop/Piano/Guitar/2-GB.mp3"; sourceTree = "<group>"; };
+		75139E882509B19000015445 /* 5-GA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "5-GA.mp3"; path = "../../../../../../../../../../Desktop/Develop/Piano/Guitar/5-GA.mp3"; sourceTree = "<group>"; };
+		75139E892509B19000015445 /* 3-GG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "3-GG.mp3"; path = "../../../../../../../../../../Desktop/Develop/Piano/Guitar/3-GG.mp3"; sourceTree = "<group>"; };
+		75139E8A2509B19000015445 /* 6-GE1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "6-GE1.mp3"; path = "../../../../../../../../../../Desktop/Develop/Piano/Guitar/6-GE1.mp3"; sourceTree = "<group>"; };
+		75139E912509BEC100015445 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		7542DAFF2509A132004AA39D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7542DB0A2509A660004AA39D /* 1-XC.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "1-XC.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/1-XC.wav"; sourceTree = "<group>"; };
 		7542DB0B2509A660004AA39D /* 6-XA.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "6-XA.wav"; path = "../../../../../../../../../../Desktop/Develop/Piano/Xilofono/14220__danmitch3ll__xylophone/6-XA.wav"; sourceTree = "<group>"; };
@@ -118,6 +132,12 @@
 		7582DF3B2507D81F0014C60B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				75139E852509B19000015445 /* 1-GE.mp3 */,
+				75139E872509B19000015445 /* 2-GB.mp3 */,
+				75139E892509B19000015445 /* 3-GG.mp3 */,
+				75139E862509B19000015445 /* 4-GD.mp3 */,
+				75139E882509B19000015445 /* 5-GA.mp3 */,
+				75139E8A2509B19000015445 /* 6-GE1.mp3 */,
 				7542DB0A2509A660004AA39D /* 1-XC.wav */,
 				7542DB102509A661004AA39D /* 2-XD.wav */,
 				7542DB112509A661004AA39D /* 3-XE.wav */,
@@ -148,6 +168,7 @@
 			children = (
 				7582DF29250791C50014C60B /* ViewController.swift */,
 				7542DAFF2509A132004AA39D /* SecondViewController.swift */,
+				75139E912509BEC100015445 /* ThirdViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -211,12 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7582DF512507D92D0014C60B /* 1-A.mp3 in Resources */,
+				75139E8F2509B19000015445 /* 3-GG.mp3 in Resources */,
 				7542DB192509A661004AA39D /* 3-XE.wav in Resources */,
 				7582DF32250791CA0014C60B /* LaunchScreen.storyboard in Resources */,
 				7582DF4A2507D92D0014C60B /* 4-C.mp3 in Resources */,
+				75139E8C2509B19000015445 /* 4-GD.mp3 in Resources */,
 				7582DF4D2507D92D0014C60B /* 13-A1.mp3 in Resources */,
 				7542DB132509A661004AA39D /* 6-XA.wav in Resources */,
 				7542DB142509A661004AA39D /* 8-XC1.wav in Resources */,
+				75139E8E2509B19000015445 /* 5-GA.mp3 in Resources */,
 				7542DB152509A661004AA39D /* 7-XB.wav in Resources */,
 				7542DB162509A661004AA39D /* 5-XG.wav in Resources */,
 				7582DF4C2507D92D0014C60B /* 3-B.mp3 in Resources */,
@@ -227,7 +251,10 @@
 				7582DF4F2507D92D0014C60B /* 2-Bb.mp3 in Resources */,
 				7582DF522507D92D0014C60B /* 8-E.mp3 in Resources */,
 				7582DF4B2507D92D0014C60B /* 12-Ab.mp3 in Resources */,
+				75139E8D2509B19000015445 /* 2-GB.mp3 in Resources */,
+				75139E8B2509B19000015445 /* 1-GE.mp3 in Resources */,
 				7582DF502507D92D0014C60B /* 9-F.mp3 in Resources */,
+				75139E902509B19000015445 /* 6-GE1.mp3 in Resources */,
 				7582DF552507D92D0014C60B /* 6-D.mp3 in Resources */,
 				7582DF542507D92D0014C60B /* 7-Eb.mp3 in Resources */,
 				7582DF532507D92D0014C60B /* 11-G.mp3 in Resources */,
@@ -248,6 +275,7 @@
 				7582DF26250791C50014C60B /* AppDelegate.swift in Sources */,
 				7582DF28250791C50014C60B /* SceneDelegate.swift in Sources */,
 				7542DB002509A132004AA39D /* SecondViewController.swift in Sources */,
+				75139E922509BEC100015445 /* ThirdViewController.swift in Sources */,
 				7582DF3A2507961C0014C60B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

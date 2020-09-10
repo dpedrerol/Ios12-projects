@@ -749,18 +749,212 @@
         <!--Guitarra-->
         <scene sceneID="Zc0-lO-Rfa">
             <objects>
-                <viewController id="cb0-ed-n83" sceneMemberID="viewController">
+                <viewController id="cb0-ed-n83" customClass="ThirdViewController" customModule="_5_Piano" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t9p-8B-nuu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guitarBackground" translatesAutoresizingMaskIntoConstraints="NO" id="TOX-qp-RxH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="638"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="638" id="m2Z-gK-t9v"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T24-AJ-fYR" userLabel="Button E1">
+                                <rect key="frame" x="272" y="44" width="12" height="638"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="egT-mT-ECD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="cb0-ed-n83" eventType="touchUpInside" id="ZjC-CG-2vj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tk1-8Y-TPS" userLabel="Button A">
+                                <rect key="frame" x="242" y="44" width="10" height="638"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="CZ6-kF-JJh"/>
+                                    <constraint firstAttribute="width" constant="10" id="Rpf-aT-jrD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="cb0-ed-n83" eventType="touchUpInside" id="XYc-ce-M0i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPZ-go-tjR" userLabel="Button D">
+                                <rect key="frame" x="216" y="44" width="8" height="638"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="QPY-0S-k2q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="cb0-ed-n83" eventType="touchUpInside" id="2qp-CS-Fia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YD-Of-8WB" userLabel="Button G">
+                                <rect key="frame" x="192" y="44" width="7" height="638"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="AVE-7R-dr3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="7" id="Xu5-pE-zIU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="cb0-ed-n83" eventType="touchUpInside" id="x3A-4r-Z4Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXI-ps-5YL" userLabel="Button B">
+                                <rect key="frame" x="168" y="0.0" width="7" height="682"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="3Oi-by-Rqk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="7" id="utM-hG-L1b"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="cb0-ed-n83" eventType="touchUpInside" id="0yr-Wc-LZr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-Aj-0N3" userLabel="Button E">
+                                <rect key="frame" x="144" y="0.0" width="7" height="682"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="V5J-2b-0iH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="7" id="jEq-Ng-LXd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="cb0-ed-n83" eventType="touchUpInside" id="tKb-dP-iZj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Db" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rw-JJ-olK">
+                                <rect key="frame" x="308" y="698" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="q9d-8E-F4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ur-1MN">
+                                <rect key="frame" x="18" y="759" width="378" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="uf7-7X-cXB"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderVolumeChanged:" destination="cb0-ed-n83" eventType="valueChanged" id="hMO-Lq-eAa"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nbD-Aj-0N3" firstAttribute="top" secondItem="t9p-8B-nuu" secondAttribute="top" id="1ma-g5-TXC"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="bottom" secondItem="aPZ-go-tjR" secondAttribute="bottom" constant="131" id="5QN-R7-FPE"/>
+                            <constraint firstItem="T24-AJ-fYR" firstAttribute="leading" secondItem="tk1-8Y-TPS" secondAttribute="trailing" constant="20" id="6wW-nG-YgO"/>
+                            <constraint firstItem="TOX-qp-RxH" firstAttribute="top" secondItem="3nV-1L-6WB" secondAttribute="top" id="8Qn-7H-bHu"/>
+                            <constraint firstItem="tk1-8Y-TPS" firstAttribute="top" secondItem="3nV-1L-6WB" secondAttribute="top" id="Bel-da-X6W"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="bottom" secondItem="tk1-8Y-TPS" secondAttribute="bottom" constant="131" id="CD5-lF-1Al"/>
+                            <constraint firstItem="mPg-ur-1MN" firstAttribute="top" secondItem="3rw-JJ-olK" secondAttribute="bottom" constant="20" id="DQY-y4-GKY"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="bottom" secondItem="0YD-Of-8WB" secondAttribute="bottom" constant="131" id="Epf-xs-MeV"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="bottom" secondItem="HXI-ps-5YL" secondAttribute="bottom" constant="131" id="Fmc-XM-3ws"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="trailing" secondItem="mPg-ur-1MN" secondAttribute="trailing" constant="16" id="Kkq-D5-GkR"/>
+                            <constraint firstItem="0YD-Of-8WB" firstAttribute="top" secondItem="3nV-1L-6WB" secondAttribute="top" id="Kox-uS-6BX"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="trailing" secondItem="3rw-JJ-olK" secondAttribute="trailing" constant="16" id="ORt-EK-BPh"/>
+                            <constraint firstItem="TOX-qp-RxH" firstAttribute="leading" secondItem="3nV-1L-6WB" secondAttribute="leading" id="QzK-Bz-3kh"/>
+                            <constraint firstItem="HXI-ps-5YL" firstAttribute="leading" secondItem="nbD-Aj-0N3" secondAttribute="trailing" constant="17" id="R8v-vj-ocw"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="bottom" secondItem="T24-AJ-fYR" secondAttribute="bottom" constant="131" id="Sy3-Ai-b9x"/>
+                            <constraint firstItem="aPZ-go-tjR" firstAttribute="top" secondItem="3nV-1L-6WB" secondAttribute="top" id="YHf-QF-Ucf"/>
+                            <constraint firstItem="aPZ-go-tjR" firstAttribute="leading" secondItem="0YD-Of-8WB" secondAttribute="trailing" constant="17" id="bjE-Hy-iRh"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="trailing" secondItem="TOX-qp-RxH" secondAttribute="trailing" id="cDK-Q0-UCF"/>
+                            <constraint firstItem="3rw-JJ-olK" firstAttribute="top" secondItem="TOX-qp-RxH" secondAttribute="bottom" constant="16" id="cPt-r4-dBQ"/>
+                            <constraint firstItem="T24-AJ-fYR" firstAttribute="top" secondItem="3nV-1L-6WB" secondAttribute="top" id="gql-tB-yUD"/>
+                            <constraint firstItem="tk1-8Y-TPS" firstAttribute="leading" secondItem="aPZ-go-tjR" secondAttribute="trailing" constant="18" id="iKe-Ez-QCV"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="trailing" secondItem="T24-AJ-fYR" secondAttribute="trailing" constant="130" id="k8s-TT-hqG"/>
+                            <constraint firstItem="HXI-ps-5YL" firstAttribute="top" secondItem="t9p-8B-nuu" secondAttribute="top" id="nEF-Ue-H1i"/>
+                            <constraint firstItem="3rw-JJ-olK" firstAttribute="leading" secondItem="3nV-1L-6WB" secondAttribute="leading" constant="308" id="nLN-2x-cYv"/>
+                            <constraint firstItem="T24-AJ-fYR" firstAttribute="leading" secondItem="tk1-8Y-TPS" secondAttribute="trailing" constant="20" id="oTZ-hX-pC2"/>
+                            <constraint firstItem="mPg-ur-1MN" firstAttribute="leading" secondItem="3nV-1L-6WB" secondAttribute="leading" constant="16" id="uqd-vQ-5uB"/>
+                            <constraint firstItem="0YD-Of-8WB" firstAttribute="leading" secondItem="HXI-ps-5YL" secondAttribute="trailing" constant="17" id="wWX-1M-B30"/>
+                            <constraint firstItem="3nV-1L-6WB" firstAttribute="bottom" secondItem="nbD-Aj-0N3" secondAttribute="bottom" constant="131" id="zB9-CO-QGx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3nV-1L-6WB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Guitarra" id="ooY-ad-bBm"/>
+                    <connections>
+                        <outlet property="labelDb" destination="3rw-JJ-olK" id="lEd-a4-5Ba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kG2-PR-0ic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="1361"/>
+            <point key="canvasLocation" x="105.79710144927537" y="1360.0446428571429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="guitarBackground" width="395.5" height="643"/>
+    </resources>
 </document>
