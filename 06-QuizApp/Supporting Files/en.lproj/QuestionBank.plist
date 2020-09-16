@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>questions</key>
+	<array>
+		<dict>
+			<key>question</key>
+			<string>The Vatican has enough money to end poverty in the world twice</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>In effect, they have enough money to eradicate world poverty</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>The seahorse is so faithful to its partner that when one dies, the other does too soon after</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>They can&apos;t live without each other</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Humans are the only living beings who have sex for pleasure</string>
+			<key>answer</key>
+			<false/>
+			<key>explanation</key>
+			<string>Dolphins and bonobos also have sex for pleasure</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>The apple seed contains cyanide and is toxic</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>If ingested in sufficient quantity it&apos;s can cause death.</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>You can shave a cat&apos;s whiskers without any problem</string>
+			<key>answer</key>
+			<false/>
+			<key>explanation</key>
+			<string>The sense of balance in cats depends largely on their whiskers</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>A koala needs to drink at least once a day</string>
+			<key>answer</key>
+			<false/>
+			<key>explanation</key>
+			<string>The koala can stop drinking for long periods (up to several months) the water it needs is obtained from its food</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Edison feared the dark</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>Indeed, it is said that his most famous invention (the light bulb) is due to that fear</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Scorpions are the only animals that commit suicide when they cannot escape a dangerous situation</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>Better dead than slave!!</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>A hamster&apos;s eyes can fall off if it is hung upside down</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>It&apos;s eye nerves and muscles are very weak</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>If you divide the number of female bees by the number of male bees in a honeycomb, you get the golden number</string>
+			<key>answer</key>
+			<false/>
+			<key>explanation</key>
+			<string>Approaches the number pi</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Palm trees originated at the North Pole</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>In fact, they flourished in the Arctic 50 million years ago</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Cervantes and Shakespeare died the same day</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>The spirit of letters leaves this world the same day</string>
+		</dict>
+	</array>
+</dict>
+</plist>
