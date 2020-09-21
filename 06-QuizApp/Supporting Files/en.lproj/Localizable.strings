@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  06-QuizApp
+
+  Created by Carlos Daniel Pedrerol on 16/09/2020.
+  Copyright © 2020 Carlos Daniel Pedrerol. All rights reserved.
+*/
+/* Popup de game over*/
+"game.over.title" = "Game Over";
+"game.over.message1" = "You are right!";
+"game.over.message2" = ". Try again!";
+
+/* Puntuación*/
+"score.text" = "Sccore:";
+"question.ok" = "Congratulation!";
+"question.ko" = "Shame...";
