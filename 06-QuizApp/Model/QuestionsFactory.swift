@@ -12,6 +12,9 @@ class QuestionsFactory {
     
     var questionsBank : QuestionsBank!
     
+    
+    
+    
     init(){
         //Procesado manual de plist
         /*if let path = Bundle.main.path(forResource: "QuestionBank", ofType: "plist"){
@@ -37,6 +40,7 @@ class QuestionsFactory {
                 print(error)
             }
         }
+  
     
      func getQuestionAt(index : Int) -> Question? {
      if index<0 || index>=self.questionsBank.questions.count {
@@ -52,4 +56,8 @@ class QuestionsFactory {
     
     }
     
-}
+    
+        
+    }
+    
+

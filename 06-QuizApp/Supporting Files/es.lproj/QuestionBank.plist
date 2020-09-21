@@ -5,6 +5,28 @@
 	<key>questions</key>
 	<array>
 		<dict>
+			<key>imageq</key>
+			<string>hedgehog</string>
+			<key>question</key>
+			<string>El erizo es capaz de tolerar dosis de arsénico que podrían matar a 25 personas.</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>Dado que suele alimentarse de serpientes, ha desarrollado una inmunidad alta a los venenos</string>
+		</dict>
+		<dict>
+			<key>imageq</key>
+			<string>maths</string>
+			<key>question</key>
+			<string>Lo que ves es la fórmula que calcula el volumen del cilindro</string>
+			<key>answer</key>
+			<false/>
+			<key>explanation</key>
+			<string>La fórmula corresponde al volumen de la esfera</string>
+		</dict>
+		<dict>
+            <key>imageq</key>
+            <string>image3</string>
 			<key>question</key>
 			<string>El Vaticano tiene el suficiente dinero para acabar con la pobreza en el mundo dos veces</string>
 			<key>answer</key>
@@ -13,6 +35,8 @@
 			<string>En efecto, tienen suficiente dinero para erradicar la pobreza mundial</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image4</string>
 			<key>question</key>
 			<string>El caballito de mar es tan fiel a su pareja que cuando uno muere, el otro también lo hace al poco tiempo</string>
 			<key>answer</key>
@@ -21,6 +45,8 @@
 			<string>No pueden vivir el uno sin el otro</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image5</string>
 			<key>question</key>
 			<string>Los humanos son los únicos seres vivos que practican el sexo por placer</string>
 			<key>answer</key>
@@ -29,6 +55,8 @@
 			<string>Los delfines y los bonobos también practican sexo por placer</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image6</string>
 			<key>question</key>
 			<string>La semilla de la manzana contiene cianuro y es tóxica</string>
 			<key>answer</key>
@@ -37,6 +65,8 @@
 			<string>Si se ingieren en cantidad suficiente pueden cusar la muerte</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image7</string>
 			<key>question</key>
 			<string>Se puede afeitar los bigotes a un gato sin ningún problema</string>
 			<key>answer</key>
@@ -45,6 +75,8 @@
 			<string>El sentido del equilibrio en los gatos depende en gran parte de sus bigotes</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image8</string>
 			<key>question</key>
 			<string>Un koala necesita beber por lo menos una vez al día</string>
 			<key>answer</key>
@@ -53,6 +85,8 @@
 			<string>El koala puede dejar de beber durante largos períodos, (hasta varios meses) el agua que necesita la obtiene de sus alimentos</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image9</string>
 			<key>question</key>
 			<string>Edison temía a la obscuridad</string>
 			<key>answer</key>
@@ -61,6 +95,8 @@
 			<string>En efecto, se dice que su más famoso invento (la bombilla), se debe a ese temor</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image10</string>
 			<key>question</key>
 			<string>Los escorpiones son los únicos animales que se suicidan cuando no pueden escapar de una situación de peligro</string>
 			<key>answer</key>
@@ -69,6 +105,8 @@
 			<string>Antes muerto que vencido!!!</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image11</string>
 			<key>question</key>
 			<string>Los ojos de un hamster se pueden caer si se le cuelga cabeza abajo</string>
 			<key>answer</key>
@@ -77,6 +115,8 @@
 			<string>Su nervio ocular y sus músculos son muy débiles</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image12</string>
 			<key>question</key>
 			<string>Si divides el número de abejas hembra por el de abejas macho en un panal, se obtiene el número de oro</string>
 			<key>answer</key>
@@ -84,8 +124,10 @@
 			<key>explanation</key>
 			<string>Se aproxima al número pi</string>
 		</dict>
-		<dict>
-			<key>question</key>
+		<dict>			
+            <key>imageq</key>
+            <string>image13</string>
+            <key>question</key>
 			<string>Las palmeras se originaron en el Polo Norte</string>
 			<key>answer</key>
 			<true/>
@@ -93,6 +135,8 @@
 			<string>En efecto, florecieron en el Ártico hace 50 millones de años</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image14</string>
 			<key>question</key>
 			<string>Cervantes y Shakespeare murieron el mismo día</string>
 			<key>answer</key>

@@ -12,7 +12,10 @@ class Question : CustomStringConvertible, Codable {
     
     let question : String
     let answer : Bool
-    let explanation :String
+    let explanation : String
+    let imageq : String
+    
+    
     
     /*enum CodingKeys : String, CodingKey {
         case questionText = "question"
@@ -31,10 +34,12 @@ class Question : CustomStringConvertible, Codable {
         """
     }
     
-    init(text: String, correctAnswer: Bool, answer : String) {
+    init(text: String, correctAnswer: Bool, answer : String, image : String) {
         self.question = text
         self.answer = correctAnswer
         self.explanation = answer
+        self.imageq = image
+      
     }
 }
 struct QuestionsBank : Codable {

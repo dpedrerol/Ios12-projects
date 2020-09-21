@@ -5,6 +5,28 @@
 	<key>questions</key>
 	<array>
 		<dict>
+			<key>imageq</key>
+			<string>hedgehog</string>
+			<key>question</key>
+			<string>The hedgehog is able to tolerate doses of arsenic that could kill 25 people.</string>
+			<key>answer</key>
+			<true/>
+			<key>explanation</key>
+			<string>Since it usually feeds on snakes, it has developed a high immunity to poisons</string>
+		</dict>
+		<dict>
+			<key>imageq</key>
+			<string>maths</string>
+			<key>question</key>
+			<string>What you see is the formula that calculates the volume of the cylinder</string>
+			<key>answer</key>
+			<false/>
+			<key>explanation</key>
+			<string>The formula is of the volume of the sphere</string>
+		</dict>
+		<dict>
+            <key>imageq</key>
+            <string>image3</string>
 			<key>question</key>
 			<string>The Vatican has enough money to end poverty in the world twice</string>
 			<key>answer</key>
@@ -13,6 +35,8 @@
 			<string>In effect, they have enough money to eradicate world poverty</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image4</string>
 			<key>question</key>
 			<string>The seahorse is so faithful to its partner that when one dies, the other does too soon after</string>
 			<key>answer</key>
@@ -21,6 +45,8 @@
 			<string>They can&apos;t live without each other</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image5</string>
 			<key>question</key>
 			<string>Humans are the only living beings who have sex for pleasure</string>
 			<key>answer</key>
@@ -29,6 +55,8 @@
 			<string>Dolphins and bonobos also have sex for pleasure</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image6</string>
 			<key>question</key>
 			<string>The apple seed contains cyanide and is toxic</string>
 			<key>answer</key>
@@ -37,6 +65,8 @@
 			<string>If ingested in sufficient quantity it&apos;s can cause death.</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image7</string>
 			<key>question</key>
 			<string>You can shave a cat&apos;s whiskers without any problem</string>
 			<key>answer</key>
@@ -45,6 +75,8 @@
 			<string>The sense of balance in cats depends largely on their whiskers</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image8</string>
 			<key>question</key>
 			<string>A koala needs to drink at least once a day</string>
 			<key>answer</key>
@@ -53,7 +85,9 @@
 			<string>The koala can stop drinking for long periods (up to several months) the water it needs is obtained from its food</string>
 		</dict>
 		<dict>
-			<key>question</key>
+			<key>imageq</key>
+            <string>image9</string>
+            <key>question</key>
 			<string>Edison feared the dark</string>
 			<key>answer</key>
 			<true/>
@@ -61,6 +95,8 @@
 			<string>Indeed, it is said that his most famous invention (the light bulb) is due to that fear</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image10</string>
 			<key>question</key>
 			<string>Scorpions are the only animals that commit suicide when they cannot escape a dangerous situation</string>
 			<key>answer</key>
@@ -69,6 +105,8 @@
 			<string>Better dead than slave!!</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image11</string>
 			<key>question</key>
 			<string>A hamster&apos;s eyes can fall off if it is hung upside down</string>
 			<key>answer</key>
@@ -77,6 +115,8 @@
 			<string>It&apos;s eye nerves and muscles are very weak</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image12</string>
 			<key>question</key>
 			<string>If you divide the number of female bees by the number of male bees in a honeycomb, you get the golden number</string>
 			<key>answer</key>
@@ -85,6 +125,8 @@
 			<string>Approaches the number pi</string>
 		</dict>
 		<dict>
+            <key>imageq</key>
+            <string>image13</string>
 			<key>question</key>
 			<string>Palm trees originated at the North Pole</string>
 			<key>answer</key>
@@ -93,6 +135,8 @@
 			<string>In fact, they flourished in the Arctic 50 million years ago</string>
 		</dict>
 		<dict>
+			<key>imageq</key>
+			<string>image14</string>
 			<key>question</key>
 			<string>Cervantes and Shakespeare died the same day</string>
 			<key>answer</key>
