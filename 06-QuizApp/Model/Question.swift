@@ -14,6 +14,7 @@ class Question : CustomStringConvertible, Codable {
     let answer : Bool
     let explanation : String
     let imageq : String
+    let topic : String
     
     
     
@@ -34,11 +35,12 @@ class Question : CustomStringConvertible, Codable {
         """
     }
     
-    init(text: String, correctAnswer: Bool, answer : String, image : String) {
+    init(text: String, correctAnswer: Bool, answer : String, image : String, tema : String) {
         self.question = text
         self.answer = correctAnswer
         self.explanation = answer
         self.imageq = image
+        self.topic = tema
       
     }
 }

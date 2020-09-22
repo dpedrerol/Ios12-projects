@@ -13,6 +13,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>Since it usually feeds on snakes, it has developed a high immunity to poisons</string>
+            <key>topic</key>
+            <string>nature</string>
 		</dict>
 		<dict>
 			<key>imageq</key>
@@ -23,6 +25,8 @@
 			<false/>
 			<key>explanation</key>
 			<string>The formula is of the volume of the sphere</string>
+            <key>topic</key>
+            <string>science</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -33,6 +37,9 @@
 			<true/>
 			<key>explanation</key>
 			<string>In effect, they have enough money to eradicate world poverty</string>
+            <key>topic</key>
+                <string>human studies</string>
+            </dict>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -43,6 +50,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>They can&apos;t live without each other</string>
+            <key>topic</key>
+            <string>nature</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -53,6 +62,8 @@
 			<false/>
 			<key>explanation</key>
 			<string>Dolphins and bonobos also have sex for pleasure</string>
+            <key>topic</key>
+            <string>human studies</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -63,6 +74,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>If ingested in sufficient quantity it&apos;s can cause death.</string>
+            <key>topic</key>
+            <string>science</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -73,6 +86,8 @@
 			<false/>
 			<key>explanation</key>
 			<string>The sense of balance in cats depends largely on their whiskers</string>
+            <key>topic</key>
+            <string>nature</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -83,6 +98,8 @@
 			<false/>
 			<key>explanation</key>
 			<string>The koala can stop drinking for long periods (up to several months) the water it needs is obtained from its food</string>
+            <key>topic</key>
+            <string>nature</string>
 		</dict>
 		<dict>
 			<key>imageq</key>
@@ -93,6 +110,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>Indeed, it is said that his most famous invention (the light bulb) is due to that fear</string>
+            <key>topic</key>
+            <string>science</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -103,6 +122,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>Better dead than slave!!</string>
+            <key>topic</key>
+            <string>nature</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -113,6 +134,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>It&apos;s eye nerves and muscles are very weak</string>
+            <key>topic</key>
+            <string>nature</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -123,6 +146,8 @@
 			<false/>
 			<key>explanation</key>
 			<string>Approaches the number pi</string>
+            <key>topic</key>
+            <string>science</string>
 		</dict>
 		<dict>
             <key>imageq</key>
@@ -133,6 +158,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>In fact, they flourished in the Arctic 50 million years ago</string>
+            <key>topic</key>
+            <string>nature</string>
 		</dict>
 		<dict>
 			<key>imageq</key>
@@ -143,6 +170,8 @@
 			<true/>
 			<key>explanation</key>
 			<string>The spirit of letters leaves this world the same day</string>
+            <key>topic</key>
+            <string>human studies</string>
 		</dict>
 	</array>
 </dict>
