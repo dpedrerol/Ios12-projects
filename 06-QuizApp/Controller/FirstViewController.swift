@@ -52,6 +52,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     }
     
+    @IBAction func alertGameOver(segue: UIStoryboardSegue){
+        
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

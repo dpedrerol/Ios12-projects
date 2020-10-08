@@ -99,7 +99,9 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: NSLocalizedString("game.over.title", comment: "Título del pop up de game over"), message: "\(NSLocalizedString("game.over.message1", comment: "")) \(self.correctQuestionsAnswered) / \((currentQuestionID))\(NSLocalizedString("game.over.message2", comment: ""))", preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-            self.startGame()
+            self.performSegue(withIdentifier: "BacktoTopic", sender: self)
+            
+
         }
         alert.addAction(okAction)
         
@@ -126,6 +128,10 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+
+    
+    
    
     @IBAction func buttomPressed(_ sender: UIButton) {
         var isCorrect : Bool
