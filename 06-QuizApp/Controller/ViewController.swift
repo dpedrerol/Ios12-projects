@@ -28,57 +28,69 @@ class ViewController: UIViewController {
     var correctQuestionsAnswered = 0
     
     var currentQuestion : Question!
-    
+        
     var audioPlayer : AVAudioPlayer!
+    
+    var topicQuestion = ""
+    
+    var newBank : [Question] = []
     
     let factory = QuestionsFactory()
     
-   
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-      startGame()
+         
+        
+           startGame()
     }
-
+       
+ 
     func startGame(){
         currentScore = 0
         currentQuestionID = 0
         correctQuestionsAnswered = 0
         
+        
 //  El método shuffle reordena las preguntas para que cada partida sea diferente
-        self.factory.questionsBank.questions.shuffle()
+//       self.newBank.shuffle()
         
         
-        askNextQuestion()
+            askNextQuestion()
            
-        updateUIElements()
+            updateUIElements()
+                    
         
-        
-            
     }
     func askNextQuestion() {
         
-        if let newQuestion = factory.getQuestionAt(index: currentQuestionID) , currentQuestionID <= 9 {
+//        for question in factory.questionsBank.questions where question.topic == topicQuestion{
+            
+
+            if let newQuestion = getNewQuestionAt(index: currentQuestionID) {
                 self.currentQuestion = newQuestion
                 self.labelQuestion.text = self.currentQuestion.question
                 self.currentQuestionID += 1
-            let fileName = newQuestion.imageq
-        if let imageURL : URL = Bundle.main.url(forResource: fileName, withExtension: "png"){
-            do {
+                
+                let fileName = newQuestion.imageq
             
-            let imageData = try Data(contentsOf: imageURL)
-            self.imageQuestion.image = UIImage(data: imageData)
-            }
-            catch {
-            print(error)
-            }
-        }
+                if let imageURL : URL = Bundle.main.url(forResource: fileName, withExtension: "png"){
+                    do {
             
+                        let imageData = try Data(contentsOf: imageURL)
+                        self.imageQuestion.image = UIImage(data: imageData)
+                
+                    }
+                    catch {
+                        print(error)
+                    }
+                }
+    
                 } else{
             //Aquí la newQuestion es nula -> Ya hemos hecho todas las preguntas -> Game Over
                     gameOver()
-            
+//            }
         }
     }
     
@@ -96,11 +108,11 @@ class ViewController: UIViewController {
     
     func updateUIElements() {
         self.labelScore.text = "\(NSLocalizedString("score.text", comment: ""))\(self.currentScore)"
-        self.labelQuestionNumber.text = "\((self.currentQuestionID))/10"
+        self.labelQuestionNumber.text = "\((self.currentQuestionID))/\(self.newBank.count)"
         
         for constraint in self.progressBar.constraints {
             if constraint.identifier == "barWidth" {
-                constraint.constant = (self.view.frame.size.width/10)*CGFloat(self.currentQuestionID)
+                constraint.constant = (self.view.frame.size.width)/CGFloat(self.newBank.count) * CGFloat(self.currentQuestionID)
             }
         }
         for constraint in self.labelQuestion.constraints {
@@ -114,9 +126,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
-        
-    
+   
     @IBAction func buttomPressed(_ sender: UIButton) {
         var isCorrect : Bool
         if (sender.tag == 1){
@@ -166,6 +176,24 @@ class ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-}
+        func getNewQuestionAt(index : Int) -> Question? {
+     
+            
+            newBank = factory.questionsBank.questions.filter{ $0.topic == topicQuestion }
+            
+                
+            if index < 0 || index >= newBank.count {
+                    return nil
+                }else {
+                   
+                    return newBank[index]
+                }
+            
+            }
+            
+    }
+
+
+
 
 

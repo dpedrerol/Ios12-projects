@@ -16,8 +16,6 @@ class Question : CustomStringConvertible, Codable {
     let imageq : String
     let topic : String
     
-    
-    
     /*enum CodingKeys : String, CodingKey {
         case questionText = "question"
         case answer = "answer"
@@ -43,8 +41,10 @@ class Question : CustomStringConvertible, Codable {
         self.topic = tema
       
     }
+    
 }
 struct QuestionsBank : Codable {
     var questions : [Question]
     }
+
 

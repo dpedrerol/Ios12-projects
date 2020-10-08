@@ -13,8 +13,6 @@ class QuestionsFactory {
     var questionsBank : QuestionsBank!
     
     
-    
-    
     init(){
         //Procesado manual de plist
         /*if let path = Bundle.main.path(forResource: "QuestionBank", ofType: "plist"){
@@ -23,7 +21,7 @@ class QuestionsFactory {
                 
                 for question in questionData {
                     if let text = question["question"], let ans = question["answer"], let expl = question["explanation"] {
-                        questions.append(question(text: text as! String, correctAnswer: ans as! Bool, answer: expl as! String))
+                        questions.append(question(text: text as! String, correctAnswer: ans as! Bool, answer: expl as! String, tema: tema as! String))
                     }
                 }
             }
@@ -41,15 +39,18 @@ class QuestionsFactory {
             }
         }
   
-    
+   
      func getQuestionAt(index : Int) -> Question? {
+        
      if index<0 || index>=self.questionsBank.questions.count {
          return nil
      }else {
-         return self.questionsBank.questions[index]
-            
-        }
+         return self.questionsBank.questions[index] 
+        
     }
+}
+
+    
     func getRandomQuestion() -> Question {
         let index = Int(arc4random_uniform(UInt32(self.questionsBank.questions.count)))
         return self.questionsBank.questions[index]
@@ -58,6 +59,6 @@ class QuestionsFactory {
     
     
         
-    }
+}
     
 
