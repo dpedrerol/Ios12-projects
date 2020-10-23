@@ -19,19 +19,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yp9-JW-K8p">
                             <size key="itemSize" width="295" height="422"/>
-                            <size key="headerReferenceSize" width="50" height="78"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="398" height="90"/>
+                            <size key="footerReferenceSize" width="414" height="50"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostCell" id="HQQ-jN-0Eo" customClass="PostCell" customModule="_7_TaskScrapping" customModuleProvider="target">
-                                <rect key="frame" x="59.5" y="78" width="295" height="422"/>
+                                <rect key="frame" x="59.5" y="90" width="295" height="422"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1fH-71-Mzg">
                                     <rect key="frame" x="0.0" y="0.0" width="295" height="422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2m1-Hw-yrW">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2m1-Hw-yrW">
                                             <rect key="frame" x="0.0" y="263.5" width="295" height="158.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="2m1-Hw-yrW" secondAttribute="height" multiplier="93:50" id="UkA-nd-9aC"/>
@@ -64,11 +64,14 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderView" id="zTO-Nf-W1Z" customClass="HeaderView" customModule="_7_TaskScrapping" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmC-Cx-upN">
-                                    <rect key="frame" x="8" y="8" width="398" height="62"/>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juan Gabriel Blog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmC-Cx-upN">
+                                    <rect key="frame" x="8" y="8" width="398" height="74"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                    </accessibility>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="gmC-Cx-upN" secondAttribute="height" multiplier="199:31" id="3ut-Vs-Bl2"/>
                                     </constraints>
@@ -84,7 +87,32 @@
                                 <constraint firstItem="gmC-Cx-upN" firstAttribute="bottom" secondItem="zTO-Nf-W1Z" secondAttribute="bottomMargin" id="zid-PY-21k"/>
                             </constraints>
                             <connections>
-                                <outlet property="labelHeader" destination="gmC-Cx-upN" id="Ve1-o2-5mm"/>
+                                <outlet property="labelHeader" destination="gmC-Cx-upN" id="ACE-I8-ja0"/>
+                            </connections>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterView" id="Cic-YA-gAT" customClass="FooterView" customModule="_7_TaskScrapping" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="512" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="r7F-XA-15K" userLabel="buttom Page">
+                                    <rect key="frame" x="167" y="10" width="80" height="31"/>
+                                    <segments>
+                                        <segment title="1"/>
+                                        <segment title="2"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="changePage:" destination="Cic-YA-gAT" eventType="valueChanged" id="aUR-W4-QB1"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="r7F-XA-15K" firstAttribute="top" secondItem="Cic-YA-gAT" secondAttribute="topMargin" constant="2" id="DdA-Ub-mQo"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="r7F-XA-15K" secondAttribute="trailing" constant="159" id="cXd-aG-C5B"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="r7F-XA-15K" secondAttribute="bottom" constant="2" id="com-vo-tLq"/>
+                                <constraint firstItem="r7F-XA-15K" firstAttribute="leading" secondItem="Cic-YA-gAT" secondAttribute="leadingMargin" constant="159" id="d2V-oB-90a"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="buttomPage" destination="r7F-XA-15K" id="8mT-GB-NA4"/>
                             </connections>
                         </collectionReusableView>
                         <connections>
