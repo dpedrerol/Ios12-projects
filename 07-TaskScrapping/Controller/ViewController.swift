@@ -13,9 +13,13 @@ import Kanna
 class ViewController: UICollectionViewController {
     
     
-    let urlName = "http://juangabrielgomila.com/blog"
+    var urlName = "http://juangabrielgomila.com/blog"
+    
+    var urlName2 = "http://juangabrielgomila.com/blog/page/2/"
     
     var factory : PostsFactory!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +28,9 @@ class ViewController: UICollectionViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(reloadItemsInCollectionView), name: NSNotification.Name("PostsUpdated"), object: nil)
         
-        factory = PostsFactory(postsUrl: urlName)
+            factory = PostsFactory(postsUrl: urlName)
+            
+        
         
     }
     
@@ -39,7 +45,7 @@ class ViewController: UICollectionViewController {
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+        return CGSize(width: collectionView.frame.size.width, height: 200)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -57,22 +63,50 @@ class ViewController: UICollectionViewController {
         }
     }
     
-        func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: IndexPath) -> UICollectionReusableView {
+    func prepareHeaderAndFooter(){
         
-            var headerView : HeaderView!
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderView")
+        
+        collectionView.register(FooterView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "FooterView")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection: Int) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 60)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection: Int) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 40)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: IndexPath) -> UICollectionReusableView {
             
             if kind == UICollectionView.elementKindSectionHeader {
-                headerView =
-                collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                    withReuseIdentifier: "\(HeaderView.self)", for: indexPath) as? HeaderView
+              let headerView =
+                    (collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                            withReuseIdentifier: "HeaderView", for: indexPath) as! HeaderView)
                 
-                }
+                headerView.labelHeader.text = "Juan Gabriel Blog"
+                
+                return headerView
+       
+            }else if kind ==  UICollectionView.elementKindSectionFooter {
+    
+                let footerView =
+                    collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterView", for: indexPath) as! FooterView
+                
 
-            headerView.labelHeader.text = "Juan Gabriel Gomila Blog"
-            
-            return headerView
+                return footerView
+    
     }
+            fatalError()
+}
+    
+    
 
+    
+    
     @objc func reloadItemsInCollectionView() {
         self.collectionView.reloadData()
         
