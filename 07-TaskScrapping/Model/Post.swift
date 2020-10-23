@@ -10,7 +10,7 @@ import Foundation
 
 class Post {
     
-    
+//    var uuid : String
     var title : String
     var imgUrl : String
     var urlPost : String
@@ -22,6 +22,8 @@ class Post {
         self.title = title
         self.imgUrl = imgUrl
         self.urlPost = urlPost
+        
+//        self.uuid = UUID().uuidString
     }
     
     

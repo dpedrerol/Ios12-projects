@@ -34,10 +34,7 @@ class PostsFactory {
                         if let htmlString = response.value {
                             self.parseHTML(html: htmlString)
                         }
-     //                   if let htmlString = response.value {
-    //                        self.parseHTML(html: htmlString)
-                           
-                        
+                      
                     case .failure(_):
                         print(Error.self)
                     }
@@ -49,7 +46,7 @@ class PostsFactory {
         do{
         
             let doc = try Kanna.HTML(html: html, encoding: String.Encoding.utf8)
-            print(doc.title)
+            print(doc.title!)
         
             for div in doc.css("div"){
             if div["class"] == "entry-featured" {
