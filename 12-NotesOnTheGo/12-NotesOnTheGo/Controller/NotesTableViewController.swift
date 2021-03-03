@@ -9,7 +9,7 @@ import UIKit
 
 class NotesTableViewController: UITableViewController {
     
-    let notesArray = ["Compra1", "Compra2", "Compra3"]
+    var notesArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,4 +107,36 @@ class NotesTableViewController: UITableViewController {
     }
     */
 
+//    MARK: - Añadir nuevos ítems a la tabla
+    
+    
+    @IBAction func addNewNote(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField()
+        
+        let controller = UIAlertController(title: "Añadir nueva nota", message: "", preferredStyle: .alert)
+        
+        let addAction = UIAlertAction(title: "Añadir ítem", style: .default) { (action) in
+//           TODO : Recuperar lo que haya escrito el usuario en el textfield cuando pulse el botón añadir
+            self.notesArray.append(textField.text!)
+            self.tableView.reloadData()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        
+        controller.addAction(addAction)
+        
+        controller.addAction(cancelAction)
+        
+        controller.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Escribe aquí tu nota"
+            textField = alertTextField
+            
+        }
+        
+        present(controller, animated: true, completion: nil)
+        
+    }
+    
+    
 }
